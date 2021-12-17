@@ -1,0 +1,196 @@
+body {
+    background-color: #2C272E;
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background: grey;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+.numero {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 45%;
+    font-size: 1.5em;
+    border: none;
+    background-color: #F0AC23;
+    border: #F0AC23 5px outset;
+    box-shadow: 5px 5px 5px 5px #00000044;
+    opacity: 0.65;
+    font-weight: 900;
+}
+
+.operacion {
+    background-color: #4C70F0;
+    border-radius: 45%;
+    opacity: 0.65;
+    border: #4C70F0 5px outset;
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: 900;
+    box-shadow: 5px 0px 5px 5px #00000044;
+    transition: 1s;
+}
+
+
+.igual {
+    opacity: 0.65;
+    transition: 1s;
+    border-radius: 10px;
+    background-color: #572364;
+    border: #572364 5px outset;
+    font-weight: 900;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px 5px #00000044;
+}
+
+
+.acborrar {
+    color: white;
+    opacity: 0.75;
+    border-radius: 10px;
+    background-color: #772121;
+    border: #772121 5px outset;
+    font-weight: 900;
+    font-size: 1.5em;
+    box-shadow: 5px 5x 5px 5px #00000044;
+    margin: 5px;
+}
+.columna-2 {
+    grid-column: span 2;
+    margin-left: 10px;
+    box-shadow: 5px 5x 5px 5px #00000044;
+}
+
+.pantalla {
+    background-color: #005C40;
+    padding: 16px;
+    margin: 10px 10px 35px;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 15px;
+    text-align: right;
+    border: 2px solid black;
+    grid-column: 1 / -1;
+    grid-row: span 1.5;
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.teclas:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.numero:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.numero:active {
+    border: #F0AC23 5px inset;
+    box-shadow: 0px 0px 0px 0px #00000000;
+}
+.acborrar:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.acborrar:active {
+    border: #772121 5px inset;
+    box-shadow: 0px 0px 0px 0px #00000000;
+}
+.igual:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.igual:active {
+    border: grey 5px inset;
+    box-shadow: 0px 0px 0px 0px #00000000;
+}
+.decimal:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.decimal:active {
+    border: #4C70F0 5px inset;
+    box-shadow: 0px 0px 0px 0px #00000000;
+}
+.operacion:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.operacion:active {
+    border: #4C70F0 5px inset;
+    box-shadow: 0px 0px 0px 0px #00000000;
+}
+h1 {
+    color: white;
+    font-family: 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.texto {
+    color: white;
+    font-family: 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    color: white;
+    font-family: 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    
+}
+
+.contenido {
+    margin-top: 55px;
+    margin-left: 100px;
+    margin: 50px;
+    text-align: justify;
+
+}
+.cita {
+    font-family: oblique 100% 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: right;
+}
+
+.navbar {
+    height: 50px;
+    position: fixed;
+}
+
+.carrusel {
+    color: white;
+    font-size: 2em;
+    font-family: 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carrusel-trambolico {
+    color: black;
+    font-size: 2em;
+    font-family: 'Fraunces', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.img-fluid{ 
+    height: 500px;
+}
+
+.footer {
+    
+    font-size: 1em;
+    justify-content: center;
+}

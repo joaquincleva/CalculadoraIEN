@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="calculadoraicono.png">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    
+    <div class="contenido"> <h1 id="historia">Historia de la Calculadora</h1>
+    <h3>¿Cuál es el origen y la evolución de la calculadora? </h3> 
+   <p class="texto">Las primeras calculadoras aparecieron en la primera mitad del siglo XVII. Su creador fue el alemán Wilhelm Schickard, que en 1623 ideó la primera máquina que realizaba operaciones aritméticas. Algo después, en 1642, el matemático francés Blaise Pascal diseño y creó una máquina (llamada Pascalina) que realizaba las cuatro operaciones matemáticas básicas (sumar, restar, multiplicar y dividir). 
+   <br> Se utilizó hasta principios del siglo XX cuando fue sustituida por  otras similar que usaba botones en vez de palancas, lo que la hacía más práctica y mejoraba su diseño. 
+   A mediados del siglo XX en Austria, Curt Herzstark fabricó la calculadora mecánica denominada Curta. Fue la primera calculadora compacta y hacía sumas, restas, multiplicaciones y divisiones. 
+   En 1961 la compañía británica Bell Punch hizo la primera calculadora totalmente electrónica. Llevaba el nombre ‘Sumlock Comptometer ANITA’. 
+   En 1970 Sanyo, Canon y Sharp lanzaron al mercado calculadoras portátiles con pilas que se vendieron en todo el mundo. En 1973 Texas Instrumentos lanzó la primera calculadora científica y en 1980 aparecieron las primeras calculadoras financieras.
+   Por último, a finales del siglo XX, a través de tecnologías como la del Sensor CMOS (que detecta la luz) y de paneles solares, salieron al mercado calculadoras programables o sin necesidad de pilas. <br> <br> 
+   <p class="cita" lang="en">Fuente: Biblioteca Nacional de Matemáticas (Wordpress). Febrero de 2015 </p> <br><br><br>
+
+
+   <div class="contenido"> <h1 id="historia">Algunos ejemplos de Calculadoras</h1> <br><br><br>
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="calculadora_simple.png" class="d-block w-100 img-fluid" alt="Calculadora Simple">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carrusel">Calculadora simple</h5>
+          <p class="carrusel">Tenemos aquí la representación de una calculadora simple</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="calculadora_cara.jpg" class="d-block w-100 img-fluid" alt="Calculadora Cara">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carrusel">Calculadora cara</h5>
+          <p class="carrusel">Tenemos aquí la representación de una calculadora cara</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="calculadora_cientifica.jpg" class="d-block w-100 img-fluid" alt="Calculadora Científica">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carrusel">Calculadora científica</h5>
+          <p class="carrusel">Tenemos aquí la representación de una calculadora científica</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  <br><br><br>
+  <div class="contenido"> <h1 id="historia">Representación Digital de una Calculadora</h1> 
+   <p id="calculadora"></p>
+</div>
+    <div class="contenedor">
+        <div class="calculadora">
+            <button id="result" class="pantalla">0</button>
+            <button onclick="del()" class="acborrar columna-2">AC</button>
+            <button onclick="borrar()" class="acborrar">◄</button>
+            <button onclick="add('/')" class="operacion">/</button>
+            <button onclick="add('7')" class="numero">7</button>
+            <button onclick="add('8')" class="numero">8</button>
+            <button onclick="add('9')" class="numero">9</button>
+            <button onclick="add('*')" class="operacion">*</button>
+            <button onclick="add('4')" class="numero">4</button>
+            <button onclick="add('5')" class="numero">5</button>
+            <button onclick="add('6')" class="numero">6</button>
+            <button onclick="add('-')" class="operacion">-</button>
+            <button onclick="add('1')" class="numero">1</button>
+            <button onclick="add('2')" class="numero">2</button>
+            <button onclick="add('3')" class="numero">3</button>
+            <button onclick="add('+')" class="operacion">+</button>
+            <button onclick="add('0')" class="numero">0</button>
+            <button onclick="add('.')" class="numero">.</button>
+            <button onclick="calc()" class="igual columna-2">=</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>  
+    <br><br><br>
+    <div>
+    <p class="footer texto">Ésta página ha sido creada por Joaquín Cleva, perteneciente a la Comisión 54 del Curso de Diseño Web del IEN.</p>
+    </footer>
+    
+  </body>
+</html>
